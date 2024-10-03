@@ -9,7 +9,11 @@
 
     <meta name="author" content="Bethanys Pie shop">
     <meta name="description" content="store front for Bethanys Pie shop">
-    <meta name="viewport" content="width=device-width,initial-scale=1"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <!--the above is how you set a fav icon which is the small icon some 
+    sites have on their tab. If you want to use a fav icon it has to be 32x32 in size-->
+
     <!--[if lt IE 9]>
     <script src = "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js></script>"-->
     <!--the above code lets the site work if the browser is IE 9 or less-->
@@ -20,7 +24,10 @@
             margin-left: auto;
             margin-right: auto;
             background-color: #e6e4d9;
+            background-image: url("images/pattern.png");
+            /*baggrundsbilledet bliver gentaget indtil det dækker hele baggrunden */
         }
+
 
         #mainheader {
             background-color: purple;
@@ -57,15 +64,15 @@
 
         header,
         section,
-        footer,aside
-        ,nav
-        ,main
-        ,article
-        ,figure{
+        footer,
+        aside,
+        nav,
+        main,
+        article,
+        figure {
             display: block;
-        } 
-        
-    </style> 
+        }
+    </style>
     <!--the code with header section and so on let older browsers know how to treat those elements-->
     <!-- the viewport is important for websites that need a responsive 
  layout that looks great on different devices -->
@@ -74,13 +81,16 @@
 <body>
     <header id="mainheader">
         <nav>
-            Header goes here
+            <!--<img src="images/pie.png" height="55"/>-->
+            <img src="images/cake.svg" height="55" />
+            <!--svg files keep the image sharp even if you zoom in on them good for logos and graphs-->
         </nav>
     </header>
 
     <div style="width: 1000px; margin-left: auto; margin-right: auto;">
 
         <aside id="leftmenu">
+            <img src="images/bethanylogo.png" />
             <h4 style="text-align: center;">Browse our pies</h4>
             <input type="search" class="searchbox" placeholder="Search our store" />
         </aside>
@@ -90,6 +100,11 @@
                 <header>
                     <h1 style="font-size: 40px; color: grey;">Welcome to Bethany's Pie Shop!</h1>
                 </header>
+                <figure>
+                    <img src="images/bethany.jpg" width="700" alt="Bethany in her pie shop" />
+                    <!--alt on images is used to give extra information that can be read by screen readers it is good practice to give every image an alt-->
+                    <figcaption>Bethany in her pie shop</figcaption>
+                </figure>
                 <h2>Our history</h2>
                 <p>
                     For many years, <b>Bethany</b> has been baking the most delicious pies at her home. In 2013, we
@@ -118,13 +133,15 @@
                 <h3 style="font-family: verdana;">Our weekly promotions</h3>
                 <h4>Cheese cake</h4>
                 $12.95 - serves 4 <br>
-                <img src="cheesecake.jpg" width="500" height="300" /> <br>
+                <img src="https://gillcleerenpluralsight.blob.core.windows.net/files/cheesecake.jpg" width="500"
+                    height="300" /> <br>
+                <!--img kan også bruge billeder fra andre hjemmesider hvis man har et link til billedet-->
 
             </section>
             <p>Our address is
             <address>Bethany's Pie shop - Bakery Streey 555 Brussels Belgium</address>
             </p>
-            <footer><small>2024 Bethany's Pie Shop - All rights reserved</small></footer>
+            <footer><small>&copy;2024 Bethany's Pie Shop - All rights reserved</small></footer>
         </main>
     </div>
 
