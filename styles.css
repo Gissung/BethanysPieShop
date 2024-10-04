@@ -1,0 +1,83 @@
+
+        body {
+            margin-top: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #e6e4d9;
+            background-image: url("images/pattern.png");
+            /*baggrundsbilledet bliver gentaget indtil det dækker hele baggrunden */
+        }
+
+
+        #mainheader {
+            background-color: purple;
+        }
+
+        nav {
+            height: 60px;
+            width: 1000px;
+            margin: 0 auto 20px;
+        }
+
+        #leftmenu {
+            float: left;
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        .searchbox {
+            padding: 5px;
+            margin: 10px 10px;
+            width: 200px;
+        }
+
+        #main {
+            float: right;
+            width: 70%;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            clear: both;
+            width: 100%;
+        }
+
+        header,
+        section,
+        footer,
+        aside,
+        nav,
+        main,
+        article,
+        figure {
+            display: block;
+        } 
+        table,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        } 
+        nav>ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav>ul>li{
+            float: left;
+        }
+        nav>ul>li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            font-weight: bold; 
+            /*the 3 style layouts above show how to dictate layout when say for instance an unordered list is inside a nav and how a List item in 
+            that unordered list should look and how a listitem should look if it is a link*/
+        }
+   
+    /*the code with header section and so on let older browsers know how to treat those elements-->
+     the viewport is important for websites that need a responsive 
+ layout that looks great on different devices 
+ */

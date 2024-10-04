@@ -10,88 +10,50 @@
     <meta name="author" content="Bethanys Pie shop">
     <meta name="description" content="store front for Bethanys Pie shop">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="styles.css"> <!--the code to the left shows how to use another file to style the layout of the page-->
+    <link rel="icon" type="image/png" href="favicon.png" /> 
     <!--the above is how you set a fav icon which is the small icon some 
     sites have on their tab. If you want to use a fav icon it has to be 32x32 in size-->
 
     <!--[if lt IE 9]>
     <script src = "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js></script>"-->
     <!--the above code lets the site work if the browser is IE 9 or less-->
-    <style>
-        body {
-            margin-top: 0px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #e6e4d9;
-            background-image: url("images/pattern.png");
-            /*baggrundsbilledet bliver gentaget indtil det dækker hele baggrunden */
-        }
-
-
-        #mainheader {
-            background-color: purple;
-        }
-
-        nav {
-            height: 60px;
-            width: 1000px;
-            margin: 0 auto 20px;
-        }
-
-        #leftmenu {
-            float: left;
-            width: 30%;
-            margin-bottom: 20px;
-        }
-
-        .searchbox {
-            padding: 5px;
-            margin: 10px 10px;
-            width: 200px;
-        }
-
-        #main {
-            float: right;
-            width: 70%;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            clear: both;
-            width: 100%;
-        }
-
-        header,
-        section,
-        footer,
-        aside,
-        nav,
-        main,
-        article,
-        figure {
-            display: block;
-        }
-    </style>
-    <!--the code with header section and so on let older browsers know how to treat those elements-->
-    <!-- the viewport is important for websites that need a responsive 
- layout that looks great on different devices -->
+    <style>/*one can use another file for style if all pages ned to look the same or mostly the same*/</style>
 </head>
 
 <body>
     <header id="mainheader">
         <nav>
-            <!--<img src="images/pie.png" height="55"/>-->
-            <img src="images/cake.svg" height="55" />
-            <!--svg files keep the image sharp even if you zoom in on them good for logos and graphs-->
+
+            <ul>
+                <li> <img src="images/cake.svg" height="55" />
+                    <!--svg files keep the image sharp even if you zoom in on them good for logos and graphs-->
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pieoverview.html">All pies</a></li>
+            </ul>
         </nav>
     </header>
 
     <div style="width: 1000px; margin-left: auto; margin-right: auto;">
 
         <aside id="leftmenu">
-            <img src="images/bethanylogo.png" />
-            <h4 style="text-align: center;">Browse our pies</h4>
+            <a href="index.html"><img src="images/bethanylogo.png" /></a>
+            <header>
+                <h4 style="text-align: center;">Browse our pies</h4>
+            </header>
+            <ul>
+                <li><a href="pieoverview.html">All pies</a></li>
+                <li><a href="cheesecakes.html">Cheese cakes</a></li>
+                <li><a href="fruitpies.html">Fruitpies</a></li>
+                <li><a href="seasonalpies.html">Seasonal pies</a></li>
+                <li><a href="#promos">Promotions</a></li>
+                <!--if one wants to go to a bookmark one muse use # it can also be used to go to a bookmark on another page-->
+                <li><a href="about.html">about us</a></li>
+            </ul>
+            <!--ul here is used so that the links and search box are not on the same line on the page-->
+
+
             <input type="search" class="searchbox" placeholder="Search our store" />
         </aside>
 
@@ -126,10 +88,11 @@
                 <p>
                     Bethany is famous for using only the best ingredients.
                     This way we can make sure that our pies are absolutely the best.
-                </p>
+                </p> 
+                <p>Download our full <a href="downloads/Price list.zip">price list</a></p>
 
             </article>
-            <section>
+            <section id="promos">
                 <h3 style="font-family: verdana;">Our weekly promotions</h3>
                 <h4>Cheese cake</h4>
                 $12.95 - serves 4 <br>
@@ -141,7 +104,9 @@
             <p>Our address is
             <address>Bethany's Pie shop - Bakery Streey 555 Brussels Belgium</address>
             </p>
+            <p>Contact us via <a href="mailto:info@bethanyspieshop.com">email</a></p>
             <footer><small>&copy;2024 Bethany's Pie Shop - All rights reserved</small></footer>
+            <p><small><a href="https://wwwsnowball.be">Created by Snowball</a></small></p>
         </main>
     </div>
 
