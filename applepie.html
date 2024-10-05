@@ -18,6 +18,7 @@
     <script src = "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js></script>"-->
     <!--the above code lets the site work if the browser is IE 9 or less-->
     <style>
+    
         body {
             margin-top: 0px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -71,14 +72,29 @@
         article,
         figure {
             display: block;
-        }
-
-        table,
-        td,
-        th {
+        } 
+        table,td,th{
             border: 1px solid black;
             border-collapse: collapse;
             padding: 5px;
+        } 
+        nav>ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav>ul>li{
+            float: left;
+        }
+        nav>ul>li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            font-weight: bold; 
+            /*the 3 style layouts above show how to dictate layout when say for instance an unordered list is inside a nav and how a List item in 
+            that unordered list should look and how a listitem should look if it is a link*/
         }
     </style>
     <script>
