@@ -39,11 +39,18 @@
         <main id="main">
             <form action="contact.html" method="post">
                 Your name: <input type="text" name="CustomerName"><br>
+                Your email: <input type="email" name="CustomerEmail"><br>
+                Your phonenumber: <input type="tel" name="Customerphone"><br>
                 <input type="hidden" name="source" value="ContactForm">
-                Your feedback:<br><textarea name="feedbackText" cols="40" rows="3"></textarea><br>
-                <input type="submit" value="SendContact"> 
                 <!--inputs of the hidden type won't show up on the screen-->
-                <input type="submit">
+                Your feedback:<br><textarea name="feedbackText" cols="40" rows="3"></textarea><br>
+                Severity: <input type="number" min="1" max="10" name="Severity"><br>
+                issue Date: <input type="date" name="IssueDate"><br>
+                issue Time: <input type="time" name="IssueTime"><br>
+                
+                <input type="submit" value="SendContact"> 
+                
+                
             </form>
            <h1>Contact Us</h1>
            
