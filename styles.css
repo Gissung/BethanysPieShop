@@ -91,7 +91,18 @@
         input,textarea{
             border-radius: 7px;
         }
-   
+   input:valid{
+    border-color: green;
+   }
+   input:invalid{
+    border-color: red;
+   }
+   input:focus:invalid{
+    border-color: black;
+   }
+   input:required,textarea:required{
+    border-style: dashed;
+   }
     /*the code with header section and so on let older browsers know how to treat those elements-->
      the viewport is important for websites that need a responsive 
  layout that looks great on different devices 

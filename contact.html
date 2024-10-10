@@ -41,16 +41,17 @@
                 <fieldset>
                     <legend>Contact information</legend>
                     <p>
-                    <label for="nameField" >Your name:</label>
+                    <label for="nameField">Your name:</label>
                     <!--if one clicks on the label it moves to the input said label is affiliated with in the for field-->
-                    <input tabindex="7" id="nameField" type="text" name="CustomerName">
+                    <input required tabindex="7" id="nameField" type="text" name="CustomerName">
                 </p> <p><label for="CustomerEmail">Your email: </label>
                     <input tabindex="8"type="email" name="CustomerEmail">
                     
                 </p>
                 <p>
                 <label for="Customerphone">Your phonenumber:</label>
-                     <input tabindex="9" type="tel" name="Customerphone">
+                     <input tabindex="9" type="tel" name="Customerphone" pattern="\+d{2} \d{3}-\d{3}-d{3}">
+                    <!--the above pattern makes the phonenumber have to conform to US phonenumber format-->
                     </p>
                     <p>
                        <label>Phone type;</label> 
@@ -76,7 +77,7 @@
                 
                     <fieldset>
                         <legend>Feedback</legend>
-                        <textarea tabindex="1" name="feedbackText" cols="40" rows="3"></textarea><p>
+                        <textarea tabindex="1" required minlength="4" maxlength="50" name="feedbackText" cols="40" rows="3"></textarea><p>
                 <label for="FeedbackType">Feedback type:</label> 
                 <select tabindex="2" name="FeedbackType" multiple="multiple" size="6">
                     <optgroup label="Stores">
