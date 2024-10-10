@@ -40,22 +40,35 @@
             <form action="contact.html" method="post">
                 <fieldset>
                     <legend>Contact information</legend>
-                    <label for="nameField" >Your name:</label> 
+                    <p>
+                    <label for="nameField" >Your name:</label>
                     <!--if one clicks on the label it moves to the input said label is affiliated with in the for field-->
-                    <input tabindex="7" id="nameField" type="text" name="CustomerName"><br>
-                    Your email: <input tabindex="8"type="email" name="CustomerEmail"><br>
-                    Your phonenumber: <input tabindex="9" type="tel" name="Customerphone">
+                    <input tabindex="7" id="nameField" type="text" name="CustomerName">
+                </p> <p><label for="CustomerEmail">Your email: </label>
+                    <input tabindex="8"type="email" name="CustomerEmail">
+                    
+                </p>
+                <p>
+                <label for="Customerphone">Your phonenumber:</label>
+                     <input tabindex="9" type="tel" name="Customerphone">
+                    </p>
+                    <p>
+                       <label>Phone type;</label> 
+                    </p>
 
                     <label><input tabindex="10" type="radio" name="Phonetype" value="cell">Cell</label>
                     <label><input tabindex="11" type="radio" name="Phonetype" value="work">Work</label>
-                    <label><input tabindex="12" type="radio" name="Phonetype" value="home">Home<br></label>
+                    <label><input tabindex="12" type="radio" name="Phonetype" value="home">Home</label><br>
+                    
                     <!--when radio types have different names more of them can be selected at once but if they share a name only 
                     one of them can be chosen--> 
                     <!--putting a radio button inside a label makes it easier to click it-->
+                    <p>
                     May we contact you?:
-                    By Phone: <input tabindex="13" type="checkbox" name="OKToContact" value="Phone">
-                    By Email:<input tabindex="14" type="checkbox" name="OKToContact" value="Email"><br>
+                    <label><input tabindex="13" type="checkbox" name="OKToContact" value="Phone" >By Phone </label>
+                    <label><input tabindex="14" type="checkbox" name="OKToContact" value="Email">By Email</label>
                     
+                </p>
                 </fieldset> <br>
                 <input type="hidden" name="source" value="ContactForm">
                     <!--inputs of the hidden type won't show up on the screen-->
@@ -63,8 +76,9 @@
                 
                     <fieldset>
                         <legend>Feedback</legend>
-                        <textarea tabindex="1" name="feedbackText" cols="40" rows="3"></textarea><br>
-                Feedback type: <select tabindex="2" name="FeedbackType" multiple="multiple" size="6">
+                        <textarea tabindex="1" name="feedbackText" cols="40" rows="3"></textarea><p>
+                <label for="FeedbackType">Feedback type:</label> 
+                <select tabindex="2" name="FeedbackType" multiple="multiple" size="6">
                     <optgroup label="Stores">
                         <option value="webstore">Web store</option>
                         <!--value is the text that will get sent to the server Web store is what the user will see-->
@@ -72,12 +86,27 @@
                     </optgroup>
                     <option value="webtech">Website Issue</option>
                     <option value="general">General feedback</option>
-                </select><br>
-
-                range: <input tabindex="3" type="range" min="1" max="10" name="rangeofSeverity"><br>
-                Severity: <input tabindex="4" type="number" min="1" max="10" name="Severity"><br>
-                issue Date: <input tabindex="5" type="date" name="IssueDate"><br>
-                issue Time: <input tabindex="6" type="time" name="IssueTime"><br>
+                </select>
+            </p>
+            <p></p>
+                 
+                <p><label for="rangeofSeverity">
+                    range:
+                </label>
+                <input tabindex="3" type="range" min="1" max="10" name="rangeofSeverity">
+            </p>
+                 
+                <p><label for="Severity">Severity:</label>
+                    <input tabindex="4" type="number" min="1" max="10" name="Severity">
+                </p>
+                 
+                <p><label for="IssueDate">issue Date:</label>
+                    <input tabindex="5" type="date" name="IssueDate">
+                </p>
+                 
+                <p><label for="IssueTime">issue Time:</label>
+                    <input tabindex="6" type="time" name="IssueTime">
+                </p>
             </fieldset>
                 <input tabindex="15" type="submit" value="SendContact">
 

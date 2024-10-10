@@ -75,6 +75,21 @@
             font-weight: bold; 
             /*the 3 style layouts above show how to dictate layout when say for instance an unordered list is inside a nav and how a List item in 
             that unordered list should look and how a listitem should look if it is a link*/
+        } 
+        fieldset{
+            border-color: plum;
+            border-width: 3px;
+            border-style: solid;
+        }
+        fieldset>legend{
+            color: plum;
+        }
+        p>label{
+            display: block;
+
+        }
+        input,textarea{
+            border-radius: 7px;
         }
    
     /*the code with header section and so on let older browsers know how to treat those elements-->
