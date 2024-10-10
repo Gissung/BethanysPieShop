@@ -54,7 +54,14 @@
             <!--ul here is used so that the links and search box are not on the same line on the page-->
 
 
-            <input type="search" class="searchbox" placeholder="Search our store" />
+            
+            <form action="search.html" method="get" enctype="application/x-www-form-urlencoded">
+                <!--action on the form decides where the query is gonna get submitted the application enctype is the default value-->
+                <!--enctype tells you how the data is encoded-->
+                <!--get is the default value for method when a form is created-->
+                <input name="query">
+                <input type="submit">
+            </form>
         </aside>
 
         <main id="main">
