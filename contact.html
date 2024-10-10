@@ -40,16 +40,24 @@
             <form action="contact.html" method="post">
                 Your name: <input type="text" name="CustomerName"><br>
                 Your email: <input type="email" name="CustomerEmail"><br>
-                Your phonenumber: <input type="tel" name="Customerphone"><br>
+                Your phonenumber: <input type="tel" name="Customerphone">
+                <input type="radio" name="Phonetype" value="cell">Cell
+                <input type="radio" name="Phonetype" value="work">Work
+                <input type="radio" name="Phonetype" value="home">Home<br>
+                <!--when radio types have different names more of them can be selected at once but if they share a name only one of them can be chosen-->
+                May we contact you?: 
+               By Phone: <input type="checkbox" name="OKToContact" value="Phone">
+                By Email:<input type="checkbox" name="OKToContact" value="Email"><br>
                 <input type="hidden" name="source" value="ContactForm">
                 <!--inputs of the hidden type won't show up on the screen-->
                 Your feedback:<br><textarea name="feedbackText" cols="40" rows="3"></textarea><br>
 
-                Feedback type: <select name="FeedbackType">
+                Feedback type: <select name="FeedbackType" multiple = "multiple" size="6">
+                    <optgroup label="Stores">
                     <option value="webstore">Web store</option>
                     <!--value is the text that will get sent to the server Web store is what the user will see-->
                     <option value="store">Physical store</option>
-
+                </optgroup>
                     <option value="webtech">Website Issue</option>
                     <option value="general">General feedback</option>
                 </select><br>
