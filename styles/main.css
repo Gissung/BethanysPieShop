@@ -1,0 +1,121 @@
+body {
+    margin-top: 0px;
+    font-family: 'Lato','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e6e4d9;
+    background-image: url('images/pattern.png');
+}
+
+#mainheader {
+    background-color: #a593c2;
+}
+
+nav {
+    height: 60px;
+    width: 1000px;
+    margin: 0 auto 20px;
+}
+
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+nav>ul>li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#leftmenu {
+    float: left;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+#main {
+    float: right;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+}
+
+.searchbox {
+    padding: 5px;
+    margin: 10px 10px;
+    width: 200px;
+}
+
+/* a selector tells the browser what we want to select there are
+multiple types of selectors*/
+
+/*in this case p is the selector*/
+p {
+    /*the properties inside the curly brackets tell the browser
+    which properties of the element we want to change*/
+    font-size: 18px;
+}
+
+/*the above code p{color:red}  is what is called a rule. it is 
+a rule for how you want paragraphs to look.*/
+
+h3 {
+    color: blue;
+    font-size: 23px;
+}
+li{
+    /*be careful using just li if you don't want every li 
+    on the page to share the same look */
+    font-weight: bold;
+    /*font weight lets you change the weight of the text to be 
+    bold or normal or any other weight*/
+
+    line-height: 1.5; 
+    /*a pixel is a fixed unit so if the font size is suddenly changed 
+    there might be less or more whitespace than you want which is
+    where using a unitless value like you see above might be a good 
+    idea
+    */
+
+}
+figcaption{
+    font-style: italic;
+}
+
+h1,h2,h3,h4,h5,h6{
+/*above is how to to do style for a group of elements*/
+letter-spacing: 2px;
+text-transform: capitalize;
+font-family: 'Cookie',Verdana,Arial, sans-serif;
+font-weight: normal;
+
+/* putting a , after a font in font family
+provides fallback options in case the user does not have the
+first font installed. sans serif is a generic keyword telling
+the browser if the user doesn't have these fonts installed
+at least use a sans-serif font */
+
+/*not all pcs have the same fonts so it's a good idea to use web safe
+fonts times new roman, arial,Courier new for some examples
+
+cssfontstack.com can be used to find websafe fonts
+*/
+}
+
+h4{
+    text-align: center;
+}
