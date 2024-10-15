@@ -154,3 +154,8 @@ h4{
   border it'll just use the one it gets from being part of
   the promotion class instead*/
 }
+footer{
+    padding: 60px;
+    /*padding effects the elements width and height a margin
+    does not*/
+}
