@@ -118,4 +118,23 @@ cssfontstack.com can be used to find websafe fonts
 
 h4{
     text-align: center;
+} 
+/*the following layout will only affect elements with the class promotion*/
+.promotion{
+ background-color: #23cea6;
+ color: white;
+ width: 450px;   
+ text-align: center; 
+ font-size: 50px;
+}
+.promotion img{
+    width: 50%;/*this is an example of using a relative unit
+    without using 50% the image overflows it's container
+    Pixels could also be used instead but it is not as constant
+    
+    em is another relative unit that is calculated based on font 
+    size. 
+    rem is the same except it uses the font size of the body
+    or the HTML element
+    */
 }
