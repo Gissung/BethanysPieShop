@@ -125,7 +125,17 @@ h4{
  color: white;
  width: 450px;   
  text-align: center; 
- font-size: 50px;
+ border: 10px solid #a593c2; /*the color can also be apllied on
+ only one of the 4 sides border-left instead of border if
+ you want to do that for the left side*/
+ /*the outline is added on to the border if one uses said element
+ */
+ padding: 20px;/*padding allows you to add whitespace*/
+ margin-bottom: 20px ;
+ /*margin adds whitespace outside the element
+ When using 2 margins if they collide only the largest
+ gets applied instead of both and if they're equal only one is
+ applied*/
 }
 .promotion img{
     width: 50%;/*this is an example of using a relative unit
@@ -137,4 +147,10 @@ h4{
     rem is the same except it uses the font size of the body
     or the HTML element
     */
+}
+.promotion-purple{
+  background-color: #a593c2;
+  border-color:  #23cea6;  /*if I don't change the value of
+  border it'll just use the one it gets from being part of
+  the promotion class instead*/
 }
