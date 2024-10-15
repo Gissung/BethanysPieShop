@@ -159,3 +159,8 @@ footer{
     /*padding effects the elements width and height a margin
     does not*/
 }
+
+#sidebar-heading/*this is how you target an id for styling*/
+{
+font-size: 24px;
+}
