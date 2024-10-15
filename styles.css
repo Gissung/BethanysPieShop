@@ -104,7 +104,10 @@
    input:required,textarea:required{
     border-style: dashed;
    }
-    /*the code with header section and so on let older browsers know how to treat those elements-->
-     the viewport is important for websites that need a responsive 
- layout that looks great on different devices 
- */
+   tr:nth-of-type(odd){
+    background-color: #b4ddd3;
+    /*this targets all of the odd rows in a table*/
+}
+tr:nth-of-type(even){
+ background-color: #e0d7ef;   
+}
