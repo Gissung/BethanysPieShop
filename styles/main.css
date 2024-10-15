@@ -164,3 +164,9 @@ footer{
 {
 font-size: 24px;
 }
+
+#leftmenu > ul > li > ul > li /*this is an example of using a 
+combinator to target a list embedded deeply in the leftmenu
+*/{
+    color: red;
+}
