@@ -177,7 +177,8 @@ combinator to target a list embedded deeply in the leftmenu
 }
 /*the following is an example of working with pseudo classes*/
 #leftmenu a:hover {
- color: red;   
+ color: red;  
+ /*whenever this element is hovered over it will change color to red*/ 
 }
 /*
 tr:nth-of-type(1){

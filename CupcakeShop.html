@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<!-- alt+shift+f reformats code to be more readable -->
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Welcome to Bethanys Cup cake shop</title>
+
+    <meta name="author" content="Bethanys Pie shop">
+    <meta name="description" content="store front for Bethanys Pie shop">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles.css"> <!--the code to the left shows how to use another file to style the layout of the page-->
+    <link rel="icon" type="image/png" href="favicon.png" /> 
+    
+    <style>/*one can use another file for style if all pages ned to look the same or mostly the same*/
+        body{
+            /*if a page has elements that need to look different
+            from how they look on other pages one can use the style
+            tag while still using a css file to style everything else*/
+            background-image: url("images/cake.svg");
+            background-color:#eb6240; 
+            background-repeat: repeat-y;
+             /*background repeate allows you to decide how and 
+            how many times the background should be repeated*/
+            background-position:25% 0% ;
+           /*here background position is used to move the background
+           away from being as left as it can be*/
+           /*background-image: linear-gradient(to right,#eb6240, #23cfa7);*/
+       
+        }
+        #main{
+            width:60% ;
+        }
+        h1{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+  <h1>Welcome to Bethanys Pie shop</h1>
+</div>
+</body> 
+</html>
