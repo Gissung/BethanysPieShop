@@ -14,6 +14,11 @@
     <link rel="icon" type="image/png" href="favicon.png" /> 
     
     <style>/*one can use another file for style if all pages ned to look the same or mostly the same*/
+        *{/*the star means match any element this means that
+            all elements will have this style by default unless
+            specified otherwise*/
+            color: white;
+        }
         body{
             /*if a page has elements that need to look different
             from how they look on other pages one can use the style
@@ -35,11 +40,30 @@
         h1{
             color: white;
         }
+        p{
+            color: blue;
+        } 
+        .description{
+           color: rgb(80, 240, 240)
+           /*having rgb after color allows one to use rgb values
+           instead of the hexvalue*/
+        } 
+        #third,#fourth{
+            color: #00FF00;
+        }
+
     </style>
 </head>
 <body>
 <div id="main">
   <h1>Welcome to Bethanys Pie shop</h1>
+  <p>Cupcake</p>
+  <p class="description">Cupcake</p>
+  <p class="description" id="third">Cupcake</p>
+  <p class="description" id="fourth" style="color: rgba(255, 0, 0, .5);">Cupcake</p>
+  <!--the reason the paragraphs look different is because of the
+  CSS specificity hierarchy rules 
+  in short the most specific rule applies-->
 </div>
 </body> 
 </html>
