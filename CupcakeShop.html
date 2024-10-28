@@ -10,104 +10,123 @@
     <meta name="author" content="Bethanys Pie shop">
     <meta name="description" content="store front for Bethanys Pie shop">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles.css"> <!--the code to the left shows how to use another file to style the layout of the page-->
-    <link rel="icon" type="image/png" href="favicon.png" /> 
-    
-    <style>/*one can use another file for style if all pages ned to look the same or mostly the same*/
-        *{/*the star means match any element this means that
+    <link rel="stylesheet" href="styles.css">
+    <!--the code to the left shows how to use another file to style the layout of the page-->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <style>
+        /*one can use another file for style if all pages ned to look the same or mostly the same*/
+        * {
+            /*the star means match any element this means that
             all elements will have this style by default unless
             specified otherwise*/
             color: white;
         }
-        body{
+
+        body {
             /*if a page has elements that need to look different
             from how they look on other pages one can use the style
             tag while still using a css file to style everything else*/
             background-image: url("images/cake.svg");
-            background-color:#eb6240; 
+            background-color: #eb6240;
             background-repeat: repeat-y;
-             /*background repeate allows you to decide how and 
+            /*background repeate allows you to decide how and 
             how many times the background should be repeated*/
-            background-position:25% 0% ;
-           /*here background position is used to move the background
+            background-position: 25% 0%;
+            /*here background position is used to move the background
            away from being as left as it can be*/
-           /*background-image: linear-gradient(to right,#eb6240, #23cfa7);*/
-       
+            /*background-image: linear-gradient(to right,#eb6240, #23cfa7);*/
+
         }
-        #main{
-            width:60% ;
+
+        #main {
+            width: 60%;
         }
-        h1{
+
+        h1 {
             color: white;
         }
-        p{
+
+        p {
             color: blue;
-        } 
-        .description{
-           color: rgb(80, 240, 240)
-           /*having rgb after color allows one to use rgb values
+        }
+
+        .description {
+            color: rgb(80, 240, 240)
+                /*having rgb after color allows one to use rgb values
            instead of the hexvalue*/
-        } 
-        #third,#fourth{
+        }
+
+        #third,
+        #fourth {
             color: #00FF00;
         }
-        #cupcakes{
+
+        #cupcakes {
             background-color: white;
-          /*  opacity: .5;*/
-            width: 300px; 
+            /*  opacity: .5;*/
+            width: 300px;
             box-shadow: 25px 25px 125x black;
         }
-        #whiteboard{
-           /* background-color: white;*/
+
+        #whiteboard {
+            /* background-color: white;*/
         }
-        .cupcakeimage{
+
+        .cupcakeimage {
             background-color: white;
             width: 268px;
             height: 309px;
             background-image: url(./images/products/cupcakes.png);
-            margin-top: 5px; 
+            margin-top: 5px;
             filter: drop-shadow(30px 10px 4px black);
         }
-        #cupcake2{
-            background-position-y:368px ;
+
+        #cupcake2 {
+            background-position-y: 368px;
             height: 348px;
             filter: blur(10px);
         }
-        #cupcake3{
+
+        #cupcake3 {
             height: 442px;
-            background-position-x:-263px ;
+            background-position-x: -263px;
             filter: invert(100%);
         }
-        #cupcake4{
-            background-position-y:301px ;
-            background-position-x:-263px ;
+
+        #cupcake4 {
+            background-position-y: 301px;
+            background-position-x: -263px;
             filter: hue-rotate(180deg);
-            
+
         }
-        #cupcake1{
+
+        #cupcake1 {
             filter: saturate(150%);
         }
     </style>
 </head>
+
 <body>
-<div id="main">
-  <h1>Welcome to Bethanys Pie shop</h1>
-  <p>Cupcake</p>
-  <p class="description">Cupcake</p>
-  <p class="description" id="third">Cupcake</p>
-  <p class="description" id="fourth" style="color: rgba(255, 0, 0, .5);">Cupcake</p>
-  <!--the reason the paragraphs look different is because of the
+    <div id="main">
+        <h1>Welcome to Bethanys Pie shop</h1>
+        <p>Cupcake</p>
+        <p class="description">Cupcake</p>
+        <p class="description" id="third">Cupcake</p>
+        <p class="description" id="fourth" style="color: rgba(255, 0, 0, .5);">Cupcake</p>
+        <!--the reason the paragraphs look different is because of the
   CSS specificity hierarchy rules 
   in short the most specific rule applies-->
-  <div id="whiteboard">
-    <img id="cupcakes" src="images/products/cupcakes.png">
-    <!--følgende er et eksempel på CSS sprites i et billede og billede manipulation-->
-    <div class ="cupcakeimage" id = "cupcake1"></div>
-    <div class ="cupcakeimage" id = "cupcake2"></div>
-    <div class ="cupcakeimage" id = "cupcake3"></div>
-    <div class ="cupcakeimage" id = "cupcake4"></div>
-  </div>
-  
-</div>
-</body> 
+        <div id="whiteboard">
+            <img id="cupcakes" src="images/products/cupcakes.png">
+            <!--følgende er et eksempel på CSS sprites i et billede og billede manipulation-->
+            <div class="cupcakeimage" id="cupcake1"></div>
+            <div class="cupcakeimage" id="cupcake2"></div>
+            <div class="cupcakeimage" id="cupcake3"></div>
+            <div class="cupcakeimage" id="cupcake4"></div>
+        </div>
+
+    </div>
+</body>
+
 </html>
