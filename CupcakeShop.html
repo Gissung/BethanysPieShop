@@ -60,6 +60,22 @@
         #whiteboard{
            /* background-color: white;*/
         }
+        .cupcakeimage{
+            background-color: white;
+            width: 268px;
+            height: 309px;
+            background-image: url(./images/products/cupcakes.png);
+            margin-top: 5px;
+        }
+        #cupcake2{
+            background-position-y:368px ;
+            height: 348px;
+        }
+        #cupcake3{
+            background-position-y:250px ;
+            background-position-x:-270px ;
+            height: 250px;
+        }
     </style>
 </head>
 <body>
@@ -74,6 +90,11 @@
   in short the most specific rule applies-->
   <div id="whiteboard">
     <img id="cupcakes" src="images/products/cupcakes.png">
+    <!--følgende er et eksempel på CSS sprites i et billede og billede manipulation-->
+    <div class ="cupcakeimage" id = "cupcake1"></div>
+    <div class ="cupcakeimage" id = "cupcake2"></div>
+    <div class ="cupcakeimage" id = "cupcake3"></div>
+    <div class ="cupcakeimage" id = "cupcake4"></div>
   </div>
   
 </div>
